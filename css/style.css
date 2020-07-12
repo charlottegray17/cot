@@ -33,6 +33,7 @@ body {
   line-height: 1.4;
 }
 
+/********************************ABOUT********************************/
 
 .about-page {
   background-color: var(--background-color);
@@ -43,10 +44,35 @@ body {
 }
 
 .background-shape {
-
   z-index: -1;
 }
 
+/*styling socials*/
+.about-socials {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 3rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-socials a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.about-socials i {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+/*setting backround shape on page*/
 #triangle-bottomright {
   width: 100vw;
   height: 0;
@@ -67,18 +93,76 @@ body {
   height: 190px;
 }
 
+/*styling profile content*/
+
 .profile {
   position: absolute;
   padding: 6rem;
+  bottom: 3rem;
   z-index: 1;
   color: var(--text-color);
+  text-align: right;
 }
 
 .profile p {
   z-index: 1;
 }
 
-h2 {
+.profile h2 {
   font-size: 3rem;
   padding-bottom: 0.5rem;
+  text-transform: uppercase;
 }
+
+/********************************BLOG********************************/
+
+#blog-video {
+  position: fixed;
+  top: 10rem;
+  right: 0;
+  min-height: auto;
+  min-width: 100%;
+  z-index: auto;
+  overflow-y: hidden;
+}
+
+.blog {
+  position: absolute;
+  padding: 4rem 6rem 0 6rem;
+  z-index: 1;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.blog p:last-child {
+  width: 60%;
+}
+
+.blog h2 {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.background-shape #blog-rectangle {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: var(--shape-color);
+  width: 100vw;
+  height: 180px;
+}
+
+#blog-triangle-bottomright {
+  width: 100vw;
+  height: 0;
+  border-bottom: 250px solid var(--shape-color);
+  border-left: 1500px solid transparent;
+  position: absolute;
+  top: 180px;
+  right: 0;
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+
+/********************************CONTACT********************************/
